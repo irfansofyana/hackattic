@@ -108,10 +108,6 @@ func submitAnswer(qrString string) error {
 	if err != nil {
 		return err
 	}
-
-	if err != nil {
-		return err
-	}
 	defer res.Body.Close()
 
 	resBody, err := io.ReadAll(res.Body)
